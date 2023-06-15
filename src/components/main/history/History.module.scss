@@ -1,0 +1,241 @@
+.history {
+	width: 100%;
+}
+
+.content {
+}
+
+.block {
+	margin-top: 160px;
+
+	@media (max-width: 760px) {
+		& {
+			margin-top: 80px;
+		}
+	}
+
+	h3 {
+		font-size: 60px;
+		color: #444444;
+		text-align: center;
+		line-height: 1;
+
+		@media (max-width: 575px) {
+			& {
+				font-size: 40px;
+			}
+		}
+	}
+
+	h4 {
+		font-size: 24px;
+		text-align: center;
+		margin-top: 50px;
+	}
+}
+
+.title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.line {
+		width: 100%;
+		background-color: #eae7e7;
+		margin: auto 0;
+		height: 1px;
+		border: none;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		margin: 0 20px;
+
+		@media (max-width: 575px) {
+			& {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+.text {
+	text-align: center;
+	padding-top: 30px;
+	margin: 0 auto;
+	font-size: 23px;
+	text-decoration: none;
+	width: 80%;
+
+	@media (max-width: 760px) {
+		& {
+			width: 95%;
+		}
+	}
+
+	b {
+		font-family: 'Roboto', sans-serif;
+		color: #e9b370;
+		font-size: 20px;
+	}
+}
+
+.link {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 28px;
+	border: 1px solid #e9b370;
+	color: #e9b370;
+	text-align: center;
+	width: 250px;
+	padding: 10px 25px;
+	margin: 0 auto;
+	margin-top: 20px;
+	transition: all 0.4s ease-in-out;
+
+	&:hover {
+		background: #e9b370;
+		color: #fff;
+	}
+
+	svg {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.b_bag {
+	padding-left: 5px;
+}
+
+.plans {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 50px 0 50px;
+
+	@media (max-width: 1300px) {
+		& {
+			display: block;
+		}
+	}
+
+	@media (max-width: 760px) {
+		& {
+			margin: 50px 0 0 0;
+		}
+	}
+}
+
+.plan {
+	width: 530px;
+	height: 460px;
+	background-image: url('https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 40px;
+
+	@media (max-width: 1300px) {
+		& {
+			margin: 0 auto 30px auto;
+		}
+	}
+
+	@media (max-width: 760px) {
+		& {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 575px) {
+		& {
+			background-image: none;
+			text-align: center;
+			padding: 0px;
+			line-height: 1;
+			height: 100%;
+			margin: 70px 0 0 0;
+		}
+	}
+
+	.title {
+		font-size: 22px;
+		font-weight: 500;
+		color: #e9b370;
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 50px;
+		display: inline-block;
+
+		@media (max-width: 575px) {
+			& {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	.info {
+		font-size: 38px;
+		color: #fff;
+		margin-bottom: 50px;
+
+		@media (max-width: 575px) {
+			& {
+				margin-bottom: 30px;
+				color: #000;
+			}
+		}
+	}
+
+	.description {
+		font-size: 22.4px;
+		color: #fff;
+		margin-bottom: 50px;
+
+		@media (max-width: 575px) {
+			& {
+				margin-bottom: 30px;
+				color: #000;
+			}
+		}
+	}
+
+	.link {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 28px;
+		border: 1px solid #e9b370;
+		color: #fff;
+		text-align: center;
+		width: 100%;
+		padding: 10px 95px;
+		margin: 0 auto;
+		margin-top: 20px;
+		transition: all 0.4s ease-in-out;
+
+		@media (max-width: 575px) {
+			& {
+				padding: 10px 0;
+				color: #444;
+			}
+		}
+
+		&:hover {
+			background: #e9b370;
+		}
+
+		svg {
+			width: 30px;
+			height: 30px;
+
+			@media (max-width: 575px) {
+				& {
+					display: none;
+				}
+			}
+		}
+	}
+}

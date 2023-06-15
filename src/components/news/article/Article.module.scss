@@ -1,0 +1,42 @@
+.article {
+	width: 100%;
+	margin-top: 200px;
+
+	@media (max-width: 760px) {
+		& {
+			margin-top: 100px;
+		}
+	}
+}
+
+.logo {
+	background-image: url('/public/news.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 190px;
+	height: 118px;
+	margin: 0 auto;
+}
+
+.title {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+
+	.line {
+		width: 100%;
+		background-color: #eae7e7;
+		margin: auto 0;
+		height: 1px;
+		border: none;
+	}
+
+	h2 {
+		font-size: 24px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		margin: 0 20px;
+	}
+}

@@ -1,0 +1,172 @@
+.info {
+	width: 100%;
+}
+
+.content_image {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 160px;
+
+	@media (max-width: 1000px) {
+		& {
+			display: block;
+		}
+	}
+
+	@media (max-width: 760px) {
+		& {
+			margin-top: 80px;
+		}
+	}
+
+	.text {
+		width: 700px;
+		text-align: start;
+
+		h2 {
+			font-size: 60px;
+			color: #444444;
+			line-height: 1;
+
+			@media (max-width: 1000px) {
+				& {
+					padding-top: 10px;
+				}
+			}
+
+			@media (max-width: 575px) {
+				& {
+					font-size: 40px;
+				}
+			}
+		}
+
+		@media (max-width: 1200px) {
+			& {
+				width: 62%;
+				margin: 0 auto;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			& {
+				width: 90%;
+				text-align: center;
+			}
+		}
+
+		@media (max-width: 760px) {
+			& {
+				width: 95%;
+			}
+		}
+
+		p {
+			padding-top: 30px;
+			font-size: 23px;
+			text-decoration: none;
+
+			b {
+				font-family: 'Roboto', sans-serif;
+				color: #e9b370;
+				font-size: 20px;
+			}
+		}
+	}
+
+	.image {
+		width: 350px;
+		height: 225px;
+		background-image: url('https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-top: 90px;
+
+		@media (max-width: 1200px) {
+			& {
+				width: 35%;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			& {
+				width: 350px;
+				height: 225px;
+				margin: 60px auto 0 auto;
+			}
+		}
+
+		@media (max-width: 370px) {
+			& {
+				width: 95%;
+				height: 225px;
+			}
+		}
+	}
+}
+
+.content_text {
+	margin-top: 160px;
+
+	@media (max-width: 760px) {
+		& {
+			margin-top: 80px;
+		}
+	}
+
+	.title {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		.line {
+			width: 100%;
+			background-color: #eae7e7;
+			margin: auto 0;
+			height: 1px;
+			border: none;
+		}
+
+		h2 {
+			font-size: 24px;
+			font-weight: 400;
+			text-transform: uppercase;
+			font-family: 'Roboto', sans-serif;
+			margin: 0 20px;
+		}
+	}
+
+	h3 {
+		font-size: 60px;
+		color: #444444;
+		text-align: center;
+		line-height: 1;
+
+		@media (max-width: 575px) {
+			& {
+				font-size: 40px;
+			}
+		}
+	}
+
+	.text {
+		text-align: center;
+		padding-top: 30px;
+		margin: 0 auto;
+		font-size: 23px;
+		text-decoration: none;
+		width: 80%;
+
+		@media (max-width: 760px) {
+			& {
+				width: 95%;
+			}
+		}
+
+		b {
+			font-family: 'Roboto', sans-serif;
+			color: #e9b370;
+			font-size: 20px;
+		}
+	}
+}

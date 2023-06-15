@@ -1,0 +1,21 @@
+- /api/news/ (get):
+request: ...
+response:
+    {news: [{title: "title", content: "content"}]}
+- /api/shop/ (get)
+request: ...
+response: // Для чего двойной массив
+    {products: [[{id: "id", image: "image_path", title: "title", price: "price", short_description: "short_description", description: "description", categories: "categories"}]]}
+- /api/shop/purchase/ (post)
+request:
+    {products: [{id: "id", quantity: "quantity"}], name: "name", email: "email", comment: "comment"}
+response:
+    {"order_placed": "true/false"}
+- /api/club/ (get)
+request: ...
+response:
+    {data: "data"}
+- /api/club/team/ (get)
+request: ...
+response:
+    {players: [nickname: "nickname", description: "description", image: "image"]}

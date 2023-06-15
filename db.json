@@ -1,0 +1,102 @@
+{
+	"news": [
+		{
+			"title": "Новость 1",
+			"content": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб, по разным игровым дисциплинам, где присутствует киберспорт. Дата основания данного клуба: 21.03.2022, на данный момент стремится к получению официального статуса. Основателем данной киберспортивной корпорации, является HasanBoy-(Хасан)"
+		},
+		{
+			"title": "Новость 2",
+			"content": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб, по разным игровым дисциплинам, где присутствует киберспорт. Дата основания данного клуба: 21.03.2022, на данный момент стремится к получению официального статуса. Основателем данной киберспортивной корпорации, является HasanBoy-(Хасан)"
+		}
+	],
+
+	"players": [
+		{
+			"nickname": "Игрок 1",
+			"description": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб",
+			"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png"
+		},
+		{
+			"nickname": "Игрок 2",
+			"description": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб",
+			"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png"
+		},
+		{
+			"nickname": "Игрок 3",
+			"description": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб",
+			"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png"
+		},
+		{
+			"nickname": "Игрок 4",
+			"description": "Flash Gaming-это будущая киберспортивная организация, но в данный момент действующий киберспортивный клуб",
+			"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png"
+		}
+	],
+
+	"shop": [
+		{
+			"category": "гемы",
+			"products": [
+				{
+					"id": 1,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "30 гемов",
+					"price": "100 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "гемы"
+				},
+				{
+					"id": 2,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "70 гемов",
+					"price": "300 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "гемы"
+				},
+				{
+					"id": 3,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "170 гемов",
+					"price": "500 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "гемы"
+				}
+			]
+		},
+		{
+			"category": "разное",
+			"products": [
+				{
+					"id": 4,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "Арт",
+					"price": "300 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "разное"
+				},
+				{
+					"id": 5,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "Интро",
+					"price": "500 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "разное"
+				},
+				{
+					"id": 6,
+					"image": "https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png",
+					"title": "Реклама",
+					"price": "1000 рублей",
+					"short_description": "Lorem ipsum dolor sit amet consectetur adipisicing",
+					"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae neque saepe voluptatum commodi excepturi odio magni?",
+					"categories": "разное"
+				}
+			]
+		}
+	]
+}

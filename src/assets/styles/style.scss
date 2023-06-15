@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rozha+One&display=swap');
+
+@import './nullstyles.scss';
+
+* {
+	font-family: 'Rozha One', serif;
+}
+
+.main__container {
+	max-width: 1320px;
+	margin: 0 auto;
+
+	@media (max-width: 2500px) {
+		& {
+			max-width: 1240px;
+		}
+	}
+
+	@media (max-width: 1300px) {
+		& {
+			max-width: 1140px;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		& {
+			max-width: 960px;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		& {
+			max-width: 720px;
+		}
+	}
+
+	@media (max-width: 760px) {
+		& {
+			max-width: 540px;
+		}
+	}
+
+	@media (max-width: 575px) {
+		& {
+			width: auto;
+			margin: 0 10px;
+		}
+	}
+}

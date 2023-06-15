@@ -1,0 +1,62 @@
+.good {
+	width: 350px;
+	margin-bottom: 70px;
+	text-align: center;
+
+	* {
+		padding-bottom: 5px;
+	}
+}
+
+.image {
+	width: 350px;
+	height: 350px;
+	background-image: url('https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.title {
+	font-size: 30px;
+	color: #444444;
+}
+
+.price {
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	color: #e9b370;
+}
+
+.short_desc {
+	font-size: 17px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.readMore {
+	font-size: 16px;
+	padding-bottom: 0;
+	cursor: pointer;
+}
+
+.btn_addBag {
+	cursor: pointer;
+	font-size: 28px;
+	border: 1px solid #e9b370;
+	color: #e9b370;
+	text-align: center;
+	width: 250px;
+	padding: 10px 25px;
+	margin: 0 auto;
+	margin-top: 20px;
+	transition: all 0.4s ease-in-out;
+
+	&:hover {
+		background: #e9b370;
+		color: #fff;
+	}
+}
