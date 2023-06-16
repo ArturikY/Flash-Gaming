@@ -3,6 +3,7 @@
 }
 
 .back {
+	display: inline-block;
 	width: 34px;
 	height: 26px;
 	margin-top: 10px;
@@ -22,11 +23,30 @@
 	}
 }
 
+h1 {
+	text-align: center;
+	font-size: 50px;
+	color: #444444;
+}
+
 .product {
 	width: 80%;
 	border: 2px solid gray;
 	display: flex;
-	margin: 0 auto 30px auto;
+	margin: 20px auto 30px auto;
+
+	@media (max-width: 1200px) {
+		& {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 1000px) {
+		& {
+			align-items: center;
+			max-width: 720px;
+		}
+	}
 }
 
 .image {
@@ -34,21 +54,56 @@
 	height: 150px;
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media (max-width: 575px) {
+		& {
+			width: 100px;
+			height: 100px;
+		}
+	}
 }
 
 .text {
 	width: 70%;
+
+	@media (max-width: 760px) {
+		& {
+			width: 50%;
+		}
+	}
 }
 
 .important {
 	display: flex;
-	align-items: center;
 	width: 95%;
 	margin: 0 auto;
+
+	@media (max-width: 575px) {
+		& {
+			display: block;
+			* {
+				padding-left: 30px;
+			}
+		}
+	}
+
+	@media (max-width: 410px) {
+		& {
+			* {
+				padding-left: 10px;
+			}
+		}
+	}
 
 	.title {
 		font-size: 40px;
 		color: #444444;
+
+		@media (max-width: 760px) {
+			& {
+				font-size: 30px;
+			}
+		}
 	}
 
 	.price {
@@ -59,6 +114,12 @@
 		color: #e9b370;
 		padding-top: 5px;
 		margin-left: auto;
+
+		@media (max-width: 760px) {
+			& {
+				font-size: 20px;
+			}
+		}
 	}
 }
 
@@ -69,6 +130,18 @@
 	width: 95%;
 	margin: 0 auto;
 	text-align: center;
+
+	@media (max-width: 1000px) {
+		& {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 575px) {
+		& {
+			display: none;
+		}
+	}
 }
 
 .backend {
@@ -76,12 +149,19 @@
 }
 
 .delete {
+	cursor: pointer;
 	font-size: 40px;
 	color: #de4b3b;
 	display: flex;
 	align-items: center;
 	padding-bottom: 15px;
 	padding-left: 20px;
+
+	@media (max-width: 760px) {
+		& {
+			font-size: 34px;
+		}
+	}
 }
 
 .tuning {
@@ -101,6 +181,7 @@
 
 	.minus,
 	.plus {
+		cursor: pointer;
 		width: 25px;
 		height: 25px;
 		border-radius: 50%;
@@ -109,5 +190,10 @@
 		justify-content: center;
 		align-items: center;
 		color: #fff;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: #87d954;
+		}
 	}
 }
