@@ -1,8 +1,10 @@
 import { useActions } from '../../../hooks/useActions'
 import { useBag } from '../../../hooks/useBag'
 import styles from './ProductDetail.module.scss'
+import { IoIosArrowBack } from 'react-icons/io'
+import { BagLink } from '../bag-link/BagLink.jsx'
 
-export const ProductDetail = ({ detail }) => {
+export const ProductDetail = ({ detail, setOpen }) => {
 	const bag = useBag()
 
 	const { addToBag, removeFromBag } = useActions()
@@ -11,6 +13,14 @@ export const ProductDetail = ({ detail }) => {
 
 	return (
 		<div className={styles.productDetail}>
+			<div className={styles.header}>
+				<div onClick={() => setOpen(false)} className={styles.back}>
+					<IoIosArrowBack />
+				</div>
+				<div className={styles.logo}>
+					<BagLink />
+				</div>
+			</div>
 			<div className='main__container'>
 				<div className={styles.content}>
 					<div className={styles.image} />

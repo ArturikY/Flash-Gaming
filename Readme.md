@@ -3,7 +3,7 @@
 [x] - SHOP page
 [x] - Backend for SHOP
 [x] - Adaptive SHOP pa
-[] - Detail SHOP page + Adaptive
+[x] - Detail SHOP page + Adaptive
 [] - BAG page + Adaptive
 [] - backend in BAG
 <--->

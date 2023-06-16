@@ -10,7 +10,7 @@ export const BagLink = () => {
 		<div className={styles.bagLink}>
 			<div className={styles.content}>
 				<div className={styles.count}>{bag.length}</div>
-				<Link path='#' className={styles.logo}>
+				<Link to='/bag' className={styles.logo}>
 					<BsFillBasketFill />
 				</Link>
 			</div>

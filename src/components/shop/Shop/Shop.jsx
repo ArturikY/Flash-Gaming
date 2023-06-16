@@ -12,10 +12,16 @@ export const Shop = () => {
 	return !openDetail ? (
 		<div className={styles.wrapper}>
 			<Header />
-			<BagLink />
+			<div style={{ margin: '10px 5px 0 auto', width: '100px' }}>
+				<BagLink />
+			</div>
 			<Products setOpenDetail={setOpenDetail} setDetail={setDetailProduct} />
 		</div>
 	) : (
-		<ProductDetail detail={detailProduct} setDetail={setDetailProduct} />
+		<ProductDetail
+			detail={detailProduct}
+			setDetail={setDetailProduct}
+			setOpen={setOpenDetail}
+		/>
 	)
 }

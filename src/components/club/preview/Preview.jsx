@@ -6,7 +6,7 @@ export const Preview = () => {
 			<div className='main__container'>
 				<div className={styles.text}>
 					<h5>Клуб</h5>
-					<p>Какой-нибудь очень громкий девиз, даже ещё громче</p>
+					<p>Краткое описвание того, что будет на странице</p>
 				</div>
 			</div>
 		</div>
