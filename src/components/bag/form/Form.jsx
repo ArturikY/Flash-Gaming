@@ -1,19 +1,25 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from './Form.module.scss'
+import { BagService } from '../../../services/Bag.service'
 
-export const Form = () => {
+export const Form = ({ listProducts, setListProducts }) => {
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		comment: '',
 	})
-
-	console.log(formData)
+	const [answer, setAnswer] = useState()
 
 	useEffect(() => {
-		const sendForm = e => {
+		const sendForm = async e => {
 			e.preventDefault()
+
+			const data = await BagService.sendData(listProducts, formData)
+
+			setAnswer(data)
 		}
+
+		sendForm()
 	}, [formData])
 
 	return (

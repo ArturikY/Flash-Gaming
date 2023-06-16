@@ -4,12 +4,18 @@ import { Purchase } from '../purchase/Purchase'
 import styles from './Bag.module.scss'
 
 export const Bag = () => {
-	const [count, setCount] = useState(1)
+	const bag = useBag()
+
+	const [listProducts, setListProducts] = useState([])
+
+	useEffect(() => {
+		setListProducts(makeNewList(bag))
+	}, [])
 
 	return (
 		<div className={styles.wrapper}>
-			<Purchase count={count} setCount={setCount} />
-			<Form />
+			<Purchase listProducts={listProducts} setListProducts={setListProducts} />
+			<Form listProducts={listProducts} setListProducts={setListProducts} />
 		</div>
 	)
 }
