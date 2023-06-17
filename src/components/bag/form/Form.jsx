@@ -10,17 +10,12 @@ export const Form = ({ listProducts, setListProducts }) => {
 	})
 	const [answer, setAnswer] = useState()
 
-	useEffect(() => {
-		const sendForm = async e => {
-			e.preventDefault()
+	const sendForm = async e => {
+		e.preventDefault()
+		const data = await BagService.sendData(listProducts, formData)
 
-			const data = await BagService.sendData(listProducts, formData)
-
-			setAnswer(data)
-		}
-
-		sendForm()
-	}, [formData])
+		setAnswer(data)
+	}
 
 	return (
 		<div className={styles.form}>
@@ -70,7 +65,7 @@ export const Form = ({ listProducts, setListProducts }) => {
 							placeholder='Комментарий'
 						/>
 						<div className={styles.btn_container}>
-							<button>Отправить</button>
+							<button onClick={e => sendForm(e)}>Отправить</button>
 						</div>
 					</form>
 				</div>

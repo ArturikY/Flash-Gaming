@@ -3,13 +3,13 @@ import styles from './Header.module.scss'
 import { useRef, useState } from 'react'
 
 export const Header = () => {
-	const [burger, setBurger] = useState('')
-	const [menu, setMenu] = useState('')
+	const [burger, setBurger] = useState(false)
+	const [menu, setMenu] = useState(false)
 	const burgerRef = useRef()
 
 	const toggleBurger = () => {
-		setBurger('active')
-		setMenu('active')
+		setBurger(prev => !prev)
+		setMenu(prev => !prev)
 		console.log(burgerRef.current)
 	}
 
@@ -21,13 +21,13 @@ export const Header = () => {
 						<img src='/public/Logo.png' />
 					</a>
 					<div
-						class={`${styles.burger} ${burger}`}
+						class={burger ? 'burger active' : 'burger'}
 						onClick={toggleBurger}
 						ref={burgerRef}
 					>
 						<span></span>
 					</div>
-					<div class={`${styles.menu} ${menu}`}>
+					<div class={menu ? 'menu active' : 'menu'}>
 						<ul class={styles.list}>
 							<li>
 								<Link to='/main' class={styles.link}>

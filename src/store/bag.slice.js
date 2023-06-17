@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { deleteEl } from '../assets/scripts/script'
 
 export const bagSlice = createSlice({
 	name: 'bag',
@@ -12,7 +13,12 @@ export const bagSlice = createSlice({
 		},
 
 		removeFromBag: (state, action) => {
-			state = state.filter(product => product.id !== action.payload.id)
+			for (const el of state) {
+				if ((el.id = action.payload.id)) {
+					console.log(el)
+					state.splice(action.payload, 1)
+				}
+			}
 		},
 	},
 })

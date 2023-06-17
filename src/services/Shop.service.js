@@ -4,7 +4,7 @@ import { HOST } from '../assets/scripts/script.js'
 export const ShopService = {
 	async getAll() {
 		// Change URL and add HOST
-		const response = await axios.get(`http://localhost:4400/shop`)
+		const response = await axios.get(`/api/shop/`)
 
 		return response.data
 	},
@@ -20,3 +20,4 @@ export const ShopService = {
   }
 ]
 */
+// http://localhost:4400/shop

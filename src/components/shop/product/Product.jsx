@@ -8,7 +8,9 @@ export const Product = ({ product, setOpenDetail, setDetail }) => {
 
 	const { addToBag, removeFromBag } = useActions()
 
-	const isExist = bag.some(prod => prod === product)
+	const isExist = bag.some(prod => prod.id === product.id)
+
+	console.log(bag)
 
 	return (
 		<div className={styles.good}>
@@ -31,6 +33,7 @@ export const Product = ({ product, setOpenDetail, setDetail }) => {
 			<div
 				onClick={() => {
 					isExist ? removeFromBag(product) : addToBag(product)
+					console.log(product)
 				}}
 				className={styles.btn_addBag}
 			>

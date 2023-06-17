@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Form } from '../form/Form'
 import { Purchase } from '../purchase/Purchase'
 import styles from './Bag.module.scss'
+import { useBag } from '../../../hooks/useBag'
+import { makeNewList } from '../../../assets/scripts/script'
 
 export const Bag = () => {
 	const bag = useBag()

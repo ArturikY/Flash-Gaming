@@ -27,10 +27,8 @@ export const Products = ({ setOpenDetail, setDetail }) => {
 				</div>
 				<div className={styles.listProducts}>
 					{listProducts.map((data, index) => (
-						<div>
-							<h2 className={styles.category} key={index}>
-								{data.category}
-							</h2>
+						<div key={index}>
+							<h2 className={styles.category}>{data.category}</h2>
 							<div className={styles.section}>
 								{data.products.map((product, index) => (
 									<Product
