@@ -10,8 +10,6 @@ export const Product = ({ product, setOpenDetail, setDetail }) => {
 
 	const isExist = bag.some(prod => prod.id === product.id)
 
-	console.log(bag)
-
 	return (
 		<div className={styles.good}>
 			<div

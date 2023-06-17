@@ -55,22 +55,6 @@
 		&:hover {
 			background: #343434;
 		}
-
-		&::after {
-			content: '';
-			top: 35px;
-			left: 0;
-			position: absolute;
-			margin-top: 5px;
-			height: 4px;
-			transition: width 0.4s ease-in-out;
-			background: #ff3f47;
-			border-radius: 2px;
-		}
-
-		&:hover::after {
-			width: 100%;
-		}
 	}
 }
 
@@ -96,5 +80,27 @@
 
 	.list {
 		display: block;
+	}
+
+	.link {
+		color: #fff;
+		font-size: 24px;
+		text-decoration: none;
+		font-family: 'Roboto', sans-serif;
+	}
+
+	li {
+		list-style: none;
+		margin: 0 0 0 20px;
+		z-index: 3;
+		padding: 3px 20px;
+		border-radius: 10px;
+		transition: none;
+		position: relative;
+		text-transform: uppercase;
+
+		&:hover {
+			background: none;
+		}
 	}
 }

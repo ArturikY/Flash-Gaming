@@ -7,10 +7,12 @@
 [x] - BAG page + Adaptive
 [x] - backend in BAG
 <--->
-[] - HEADER styles
-[] - clear BAG after send form /
+[x] - HEADER styles
+[] - clear BAG after send form //
 [] - Fixed Removing from Bag //
-{} - Add YouTube to NEWS
+
+<!-- {} - Add YouTube to NEWS -->
+
 <--->
-[] - EVENTS page
+[x] - EVENTS page
 [] - Animations

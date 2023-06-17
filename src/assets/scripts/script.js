@@ -1,3 +1,5 @@
+import { gsap } from 'gsap'
+
 // Add HOST
 export const HOST = ''
 
