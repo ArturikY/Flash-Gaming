@@ -5,10 +5,24 @@ import { useBag } from '../../../hooks/useBag'
 import { useEffect, useState } from 'react'
 import { makeNewList } from '../../../assets/scripts/script'
 import { Goods } from '../goods/Goods'
+import { motion } from 'framer-motion'
 
 export const Purchase = ({ listProducts, setListProducts }) => {
 	return (
-		<div className={styles.purchase}>
+		<motion.div
+			className={styles.purchase}
+			initial={{
+				y: -50,
+				opacity: 0,
+			}}
+			animate={{
+				y: 0,
+				opacity: 1,
+			}}
+			transition={{
+				duration: 0.5,
+			}}
+		>
 			<Link to='/shop' className={styles.back}>
 				<IoIosArrowBack />
 			</Link>
@@ -23,6 +37,6 @@ export const Purchase = ({ listProducts, setListProducts }) => {
 					/>
 				))}
 			</div>
-		</div>
+		</motion.div>
 	)
 }

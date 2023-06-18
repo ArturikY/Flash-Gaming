@@ -1,13 +1,25 @@
 import styles from './Preview.module.scss'
+import { motion } from 'framer-motion'
 
 export const Preview = () => {
 	return (
 		<div className={styles.preview}>
 			<div className='main__container'>
-				<div className={styles.text}>
+				<motion.div
+					className={styles.text}
+					initial={{
+						opacity: 0,
+					}}
+					animate={{
+						opacity: 1,
+					}}
+					transition={{
+						duration: 0.6,
+					}}
+				>
 					<h5>Клуб</h5>
 					<p>Краткое описвание того, что будет на странице</p>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)

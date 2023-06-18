@@ -1,12 +1,49 @@
 import { Link } from 'react-router-dom'
 import styles from './History.module.scss'
+import { motion } from 'framer-motion'
+
+const textAnimation = {
+	hidden: {
+		y: -50,
+		opacity: 0,
+	},
+
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.7,
+			duration: 0.5,
+		},
+	},
+}
+
+const plansAnimation = {
+	hidden: {
+		x: -100,
+		opacity: 0,
+	},
+
+	visible: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			delay: 1.1,
+			duration: 0.7,
+		},
+	},
+}
 
 export const History = () => {
 	return (
-		<div className={styles.history}>
+		<motion.div
+			className={styles.history}
+			initial='hidden'
+			whileInView='visible'
+		>
 			<div className='main__container'>
 				<div className={styles.content}>
-					<div className={styles.block}>
+					<motion.div className={styles.block} variants={textAnimation}>
 						<div className={styles.title}>
 							<hr className={styles.line} />
 							<h2>История</h2>
@@ -37,8 +74,13 @@ export const History = () => {
 								<p>Новости</p>
 							</div>
 						</Link>
-					</div>
-					<div className={styles.block}>
+					</motion.div>
+					<motion.div
+						className={styles.block}
+						initial='hidden'
+						whileInView='visible'
+						variants={plansAnimation}
+					>
 						<div class={styles.title}>
 							<hr className={styles.line} />
 							<h2>Планы</h2>
@@ -89,8 +131,13 @@ export const History = () => {
 								</Link>
 							</div>
 						</div>
-					</div>
-					<div className={styles.block}>
+					</motion.div>
+					<motion.div
+						className={styles.block}
+						initial='hidden'
+						whileInView='visible'
+						variants={textAnimation}
+					>
 						<div className={styles.title}>
 							<div class={styles.title}>
 								<hr className={styles.line} />
@@ -124,9 +171,9 @@ export const History = () => {
 								<p>События</p>
 							</div>
 						</Link>
-					</div>
+					</motion.div>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }

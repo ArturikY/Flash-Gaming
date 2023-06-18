@@ -13,7 +13,10 @@ export const bagSlice = createSlice({
 		},
 
 		removeFromBag: (state, action) => {
-			state = state.filter(prod => prod.id !== action.payload.id)
+			const index = state.findIndex(item => item.id === action.payload.id)
+			if (index !== -1) {
+				state.splice(index, 1)
+			}
 		},
 	},
 })

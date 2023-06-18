@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react'
 import styles from './Form.module.scss'
 import { BagService } from '../../../services/Bag.service'
+import { deleteEl } from '../../../assets/scripts/script'
+import { useActions } from '../../../hooks/useActions'
+import { motion } from 'framer-motion'
 
 export const Form = ({ listProducts, setListProducts }) => {
 	const [formData, setFormData] = useState({
@@ -8,17 +11,35 @@ export const Form = ({ listProducts, setListProducts }) => {
 		email: '',
 		comment: '',
 	})
-	const [answer, setAnswer] = useState()
+
+	const { removeFromBag } = useActions()
 
 	const sendForm = async e => {
 		e.preventDefault()
 		const data = await BagService.sendData(listProducts, formData)
 
-		setAnswer(data)
+		for (const el in listProducts) {
+			deleteEl(listProducts, el)
+			removeFromBag(el)
+		}
+		setListProducts(listProducts)
 	}
 
 	return (
-		<div className={styles.form}>
+		<motion.div
+			className={styles.form}
+			initial={{
+				y: 50,
+				opacity: 0,
+			}}
+			animate={{
+				y: 0,
+				opacity: 1,
+			}}
+			transition={{
+				duration: 0.5,
+			}}
+		>
 			<div className='main__container'>
 				<div className={styles.content}>
 					<h1>Оформление заказа</h1>
@@ -70,6 +91,6 @@ export const Form = ({ listProducts, setListProducts }) => {
 					</form>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	)
 }

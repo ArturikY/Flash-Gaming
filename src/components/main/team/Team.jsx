@@ -2,6 +2,23 @@ import { useState } from 'react'
 import { MainService } from '../../../services/Main.service'
 import styles from './Team.module.scss'
 import { useEffect } from 'react'
+import { motion } from 'framer-motion'
+
+const teamAnimation = {
+	hidden: {
+		y: 50,
+		opacity: 0,
+	},
+
+	visible: {
+		y: 0,
+		opacity: 1,
+		transition: {
+			delay: 0.7,
+			duration: 0.5,
+		},
+	},
+}
 
 export const Team = () => {
 	const [listPlayers, setListPlayers] = useState([])
@@ -17,8 +34,8 @@ export const Team = () => {
 	}, [])
 
 	return (
-		<div className={styles.team}>
-			<div className='main__container'>
+		<motion.div className={styles.team} initial='hidden' whileInView='visible'>
+			<motion.div className='main__container' variants={teamAnimation}>
 				<div class={styles.title}>
 					<hr className={styles.line} />
 					<h2>Команда</h2>
@@ -38,7 +55,7 @@ export const Team = () => {
 						</div>
 					))}
 				</div>
-			</div>
-		</div>
+			</motion.div>
+		</motion.div>
 	)
 }

@@ -9,7 +9,7 @@ export const makeNewList = arr => {
 	for (const el of arr) {
 		const newObj = {
 			id: 0,
-			count: 1,
+			quantity: 1,
 			image: '',
 			title: '',
 			description: '',

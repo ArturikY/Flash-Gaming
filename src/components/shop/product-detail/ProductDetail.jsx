@@ -3,6 +3,7 @@ import { useBag } from '../../../hooks/useBag'
 import styles from './ProductDetail.module.scss'
 import { IoIosArrowBack } from 'react-icons/io'
 import { BagLink } from '../bag-link/BagLink.jsx'
+import { motion } from 'framer-motion'
 
 export const ProductDetail = ({ detail, setOpen }) => {
 	const bag = useBag()
@@ -22,7 +23,20 @@ export const ProductDetail = ({ detail, setOpen }) => {
 				</div>
 			</div>
 			<div className='main__container'>
-				<div className={styles.content}>
+				<motion.div
+					className={styles.content}
+					initial={{
+						y: -50,
+						opacity: 0,
+					}}
+					animate={{
+						y: 0,
+						opacity: 1,
+					}}
+					transition={{
+						duration: 0.3,
+					}}
+				>
 					<div className={styles.image} />
 					<div className={styles.text}>
 						<div className={styles.title}>{detail.title}</div>
@@ -37,7 +51,7 @@ export const ProductDetail = ({ detail, setOpen }) => {
 							{isExist ? 'Remove ' : 'Add'} bag
 						</div>
 					</div>
-				</div>
+				</motion.div>
 			</div>
 		</div>
 	)

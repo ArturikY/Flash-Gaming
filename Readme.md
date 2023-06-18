@@ -12,6 +12,6 @@
 <--->
 [x] - Adaptive Team
 [x] - Full adaptive
-[] - Fixed Removing from Bag
-[] - clear BAG after send form
+[x] - Fixed Removing from Bag
+[x] - clear BAG after send form
 [] - Animations
