@@ -89,18 +89,19 @@
 		font-family: 'Roboto', sans-serif;
 	}
 
-	li {
-		list-style: none;
-		margin: 0 0 0 20px;
-		z-index: 3;
-		padding: 3px 20px;
-		border-radius: 10px;
-		transition: none;
-		position: relative;
-		text-transform: uppercase;
+	.list {
+		li {
+			list-style: none;
+			margin: 0 0 0 20px;
+			z-index: 3;
+			padding: 3px 20px;
+			border-radius: 10px;
+			transition: none;
+			position: relative;
 
-		&:hover {
-			background: none;
+			&:hover {
+				background: none;
+			}
 		}
 	}
 }

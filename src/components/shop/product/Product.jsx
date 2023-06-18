@@ -31,7 +31,6 @@ export const Product = ({ product, setOpenDetail, setDetail }) => {
 			<div
 				onClick={() => {
 					isExist ? removeFromBag(product) : addToBag(product)
-					console.log(product)
 				}}
 				className={styles.btn_addBag}
 			>

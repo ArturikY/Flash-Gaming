@@ -164,5 +164,11 @@
 		&:hover {
 			background-color: #87d954;
 		}
+
+		@media (max-width: 760px) {
+			&:hover {
+				background-color: #4bac0e;
+			}
+		}
 	}
 }

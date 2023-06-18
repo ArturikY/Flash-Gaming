@@ -114,5 +114,12 @@ form {
 			background-color: #f5f2f2;
 			color: #e9b370;
 		}
+
+		@media (max-width: 760px) {
+			&:hover {
+				background-color: #444;
+				color: #fff;
+			}
+		}
 	}
 }

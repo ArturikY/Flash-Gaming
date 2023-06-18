@@ -8,11 +8,10 @@
 [x] - backend in BAG
 <--->
 [x] - HEADER styles
-[] - clear BAG after send form //
-[] - Fixed Removing from Bag //
-
-<!-- {} - Add YouTube to NEWS -->
-
-<--->
 [x] - EVENTS page
+<--->
+[x] - Adaptive Team
+[x] - Full adaptive
+[] - Fixed Removing from Bag
+[] - clear BAG after send form
 [] - Animations

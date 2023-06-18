@@ -21,6 +21,13 @@
 		background: #e9b370;
 		color: #fff;
 	}
+
+	@media (max-width: 760px) {
+		&:hover {
+			background: #fff;
+			color: #e9b370;
+		}
+	}
 }
 
 h1 {

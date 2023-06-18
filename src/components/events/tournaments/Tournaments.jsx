@@ -19,13 +19,15 @@ export const Tournament = () => {
 	return (
 		<div className={styles.tournament}>
 			<div className='main__container'>
-				{listEvents.map((event, index) => (
-					<div key={index} className={styles.event}>
-						<h2 className={styles.title}>{event.title}</h2>
-						<img src={`${event.image}`} alt='Ooops' />
-						<p className={styles.description}>{event.description}</p>
-					</div>
-				))}
+				<div className={styles.events}>
+					{listEvents.map((event, index) => (
+						<div key={index} className={styles.event}>
+							<h2 className={styles.title}>{event.title}</h2>
+							<img src={`${event.image}`} alt='Ooops' />
+							<p className={styles.description}>{event.description}</p>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	)

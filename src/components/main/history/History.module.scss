@@ -102,6 +102,13 @@
 		color: #fff;
 	}
 
+	@media (max-width: 760px) {
+		&:hover {
+			background-color: #fff;
+			color: #e9b370;
+		}
+	}
+
 	svg {
 		width: 30px;
 		height: 30px;
@@ -225,6 +232,13 @@
 
 		&:hover {
 			background: #e9b370;
+		}
+
+		@media (max-width: 760px) {
+			&:hover {
+				background: none;
+				color: #fff;
+			}
 		}
 
 		svg {
