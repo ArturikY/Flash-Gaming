@@ -89,9 +89,12 @@ export const History = () => {
 						<h3>Наши планы</h3>
 						<div className={styles.plans}>
 							<div className={styles.plan}>
-								<div className={styles.title}>План</div>
-								<div className={styles.info}>Какая-то информация</div>
-								<div className={styles.description}>Какой-то план</div>
+								<div className={styles.title}>План 1</div>
+								<div className={styles.info}>Будущая организация</div>
+								<div className={styles.description}>
+									Перейти из киберспортивного клуба в киберспортивную
+									организацию
+								</div>
 								<Link to='#'>
 									<div className={styles.link}>
 										<svg
@@ -105,14 +108,16 @@ export const History = () => {
 												d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'
 											/>
 										</svg>
-										<p>Какая-то ссылка</p>
+										<p>О клубе</p>
 									</div>
 								</Link>
 							</div>
 							<div className={styles.plan}>
-								<div className={styles.title}>План</div>
-								<div className={styles.info}>Какая-то информация</div>
-								<div className={styles.description}>Какой-то план</div>
+								<div className={styles.title}>План 2</div>
+								<div className={styles.info}>Мощный игрок</div>
+								<div className={styles.description}>
+									Стать конкурентной организацией во всех дисциплинах
+								</div>
 								<Link to='#'>
 									<div className={styles.link}>
 										<svg
@@ -126,7 +131,7 @@ export const History = () => {
 												d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'
 											/>
 										</svg>
-										<p>Какая-то ссылка</p>
+										<p>События</p>
 									</div>
 								</Link>
 							</div>
@@ -154,8 +159,8 @@ export const History = () => {
 							<b>21.03.2004</b> года рождения. Представляет на киберспортивных
 							аренах Российскую Федерацию.
 						</div>
-						<h4>Участвуйте в наших событиях:</h4>
-						<Link to='/news'>
+						<h4>Заходите в наш магазин:</h4>
+						<Link to='/shop'>
 							<div className={styles.link}>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
@@ -168,7 +173,7 @@ export const History = () => {
 										d='M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z'
 									/>
 								</svg>
-								<p>События</p>
+								<p>Магазин</p>
 							</div>
 						</Link>
 					</motion.div>

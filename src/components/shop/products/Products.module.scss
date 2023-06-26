@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .products {
 	width: 100%;
 	margin-top: 160px;
@@ -10,23 +12,27 @@
 }
 
 .logo {
-	background-image: url('/public/shop.svg');
+	/* background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/198px-Ruby_logo.svg.png?20101129171534');
 	background-size: cover;
-	background-repeat: no-repeat;
-	width: 190px;
-	height: 118px;
+	background-repeat: no-repeat; */
+	/* width: 190px;
+	height: 118px; */
 	margin: 0 auto;
+	text-align: center;
+	color: $main;
+	font-size: 100px;
+	/* background-color: $main; */
 }
 
 .title {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 0px;
 
 	.line {
 		width: 100%;
-		background-color: #eae7e7;
+		background-color: $main;
 		margin: auto 0;
 		height: 1px;
 		border: none;
@@ -38,12 +44,13 @@
 		text-transform: uppercase;
 		font-family: 'Roboto', sans-serif;
 		margin: 0 20px;
+		color: $title;
 	}
 }
 
 .category {
 	font-size: 60px;
-	color: #444444;
+	color: $title;
 	text-align: center;
 	margin-top: 70px;
 	text-transform: capitalize;

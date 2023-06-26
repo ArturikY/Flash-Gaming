@@ -17,9 +17,9 @@ export const Header = () => {
 		<header className={styles.header}>
 			<div className='main__container'>
 				<div className={styles.content}>
-					<a href='#' className={styles.logo}>
-						<img src='/public/Logo.png' />
-					</a>
+					<div href='#' className={styles.logo}>
+						<img src='/Logo.png' />
+					</div>
 					<div
 						class={burger ? 'burger active' : 'burger'}
 						onClick={toggleBurger}
@@ -30,7 +30,7 @@ export const Header = () => {
 					<div class={menu ? 'menu active' : 'menu'}>
 						<ul class={styles.list}>
 							<li>
-								<Link to='/main' class={styles.link}>
+								<Link to='/' class={styles.link}>
 									Главная
 								</Link>
 							</li>

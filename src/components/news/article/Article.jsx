@@ -3,6 +3,7 @@ import { New } from '../new/New'
 import styles from './Article.module.scss'
 import { NewsService } from '../../../services/News.service.js'
 import { motion } from 'framer-motion'
+import { BsSignpostFill } from 'react-icons/bs'
 
 export const Article = () => {
 	const [listNews, setListNews] = useState([])
@@ -35,7 +36,9 @@ export const Article = () => {
 						duration: 0.3,
 					}}
 				>
-					<div className={styles.logo} />
+					<div className={styles.logo}>
+						<BsSignpostFill />
+					</div>
 					<div class={styles.title}>
 						<hr className={styles.line} />
 						<h2>Новости</h2>

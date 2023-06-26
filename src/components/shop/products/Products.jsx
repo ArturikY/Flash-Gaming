@@ -2,8 +2,8 @@ import { Product } from '../product/Product'
 import styles from './Products.module.scss'
 import { useEffect, useState } from 'react'
 import { ShopService } from '../../../services/Shop.service'
-import { useRef } from 'react'
 import { motion } from 'framer-motion'
+import { VscRuby } from 'react-icons/vsc'
 
 export const Products = ({ setOpenDetail, setDetail }) => {
 	const [listProducts, setListProducts] = useState([])
@@ -36,7 +36,9 @@ export const Products = ({ setOpenDetail, setDetail }) => {
 						duration: 0.3,
 					}}
 				>
-					<div className={styles.logo} />
+					<div className={styles.logo}>
+						<VscRuby />
+					</div>
 					<div class={styles.title}>
 						<hr className={styles.line} />
 						<h2>Магазин</h2>

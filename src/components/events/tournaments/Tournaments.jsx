@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import styles from './Tournament.module.scss'
+import styles from './Tournaments.module.scss'
 import { EventsService } from '../../../services/Events.service'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
@@ -35,11 +35,11 @@ export const Tournament = () => {
 						duration: 0.3,
 					}}
 				>
-					{listEvents.map((event, index) => (
+					{listEvents.map((act, index) => (
 						<div key={index} className={styles.event}>
-							<h2 className={styles.title}>{event.title}</h2>
-							<img src={`${event.image}`} alt='Ooops' />
-							<p className={styles.description}>{event.description}</p>
+							<h2 className={styles.title}>{act.title}</h2>
+							<img src={`${act.image}`} alt='Ooops' />
+							<p className={styles.description}>{act.description}</p>
 						</div>
 					))}
 				</motion.div>

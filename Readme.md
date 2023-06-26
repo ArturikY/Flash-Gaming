@@ -14,4 +14,16 @@
 [x] - Full adaptive
 [x] - Fixed Removing from Bag
 [x] - clear BAG after send form
-[] - Animations
+[x] - Animations
+
+<--->
+[x] - Colors MAIN
+[x] - Colors CLUB
+[x] - Colors SHOP
+[] - Colors NEWS
+[] - Colors EVENTS
+[] - Desing HEADER
+[] - Animations for all
+
+<-Bags->
+[] - Remove from Detail

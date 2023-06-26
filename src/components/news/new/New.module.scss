@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .new {
 	margin-top: 70px;
 
@@ -10,7 +12,7 @@
 
 .title {
 	font-size: 60px;
-	color: #444444;
+	color: $title;
 	text-align: center;
 }
 
@@ -21,6 +23,7 @@
 	font-size: 23px;
 	text-decoration: none;
 	width: 70%;
+	color: $text;
 
 	@media (max-width: 760px) {
 		& {
@@ -31,7 +34,7 @@
 
 	b {
 		font-family: 'Roboto', sans-serif;
-		color: #e9b370;
+		color: $main;
 		font-size: 20px;
 	}
 }

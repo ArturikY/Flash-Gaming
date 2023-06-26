@@ -1,5 +1,7 @@
+@import '../../../assets/styles/variables.scss';
+
 .preview {
-	background: #181818;
+	background: $background2;
 }
 
 .text {
@@ -25,7 +27,7 @@
 	}
 
 	h5 {
-		color: #e9b370;
+		color: $main;
 		font-size: 15px;
 		font-weight: 500;
 		letter-spacing: 2px;

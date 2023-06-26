@@ -1,8 +1,7 @@
+@import '../../../assets/styles/variables.scss';
+
 .history {
 	width: 100%;
-}
-
-.content {
 }
 
 .block {
@@ -16,7 +15,7 @@
 
 	h3 {
 		font-size: 60px;
-		color: #444444;
+		color: #fff;
 		text-align: center;
 		line-height: 1;
 
@@ -28,6 +27,7 @@
 	}
 
 	h4 {
+		color: $text;
 		font-size: 24px;
 		text-align: center;
 		margin-top: 50px;
@@ -41,13 +41,14 @@
 
 	.line {
 		width: 100%;
-		background-color: #eae7e7;
+		background-color: $main;
 		margin: auto 0;
 		height: 1px;
 		border: none;
 	}
 
 	h2 {
+		color: $text;
 		font-size: 24px;
 		font-weight: 400;
 		text-transform: uppercase;
@@ -69,6 +70,7 @@
 	font-size: 23px;
 	text-decoration: none;
 	width: 80%;
+	color: $text;
 
 	@media (max-width: 760px) {
 		& {
@@ -78,7 +80,7 @@
 
 	b {
 		font-family: 'Roboto', sans-serif;
-		color: #e9b370;
+		color: $main;
 		font-size: 20px;
 	}
 }
@@ -88,8 +90,8 @@
 	justify-content: space-around;
 	align-items: center;
 	font-size: 28px;
-	border: 1px solid #e9b370;
-	color: #e9b370;
+	border: 1px solid $main;
+	color: $main;
 	text-align: center;
 	width: 250px;
 	padding: 10px 25px;
@@ -98,14 +100,14 @@
 	transition: all 0.4s ease-in-out;
 
 	&:hover {
-		background: #e9b370;
-		color: #fff;
+		background: $main;
+		color: $background;
 	}
 
 	@media (max-width: 760px) {
 		&:hover {
-			background-color: #fff;
-			color: #e9b370;
+			background-color: $background;
+			color: $main;
 		}
 	}
 
@@ -140,9 +142,7 @@
 .plan {
 	width: 530px;
 	height: 460px;
-	background-image: url('https://phonoteka.org/uploads/posts/2021-04/thumbs/1619251899_47-phonoteka_org-p-poluprozrachnii-chernii-fon-52.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+	border: 2px solid #ff4655;
 	padding: 40px;
 
 	@media (max-width: 1300px) {
@@ -161,7 +161,8 @@
 		& {
 			background-image: none;
 			text-align: center;
-			padding: 0px;
+			border: none;
+			padding: 10px;
 			line-height: 1;
 			height: 100%;
 			margin: 70px 0 0 0;
@@ -171,9 +172,9 @@
 	.title {
 		font-size: 22px;
 		font-weight: 500;
-		color: #e9b370;
+		color: $title2;
 		font-family: 'Roboto', sans-serif;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 		display: inline-block;
 
 		@media (max-width: 575px) {
@@ -185,26 +186,25 @@
 
 	.info {
 		font-size: 38px;
-		color: #fff;
-		margin-bottom: 50px;
+		font-weight: 600;
+		color: $title;
+		margin-bottom: 40px;
 
 		@media (max-width: 575px) {
 			& {
 				margin-bottom: 30px;
-				color: #000;
 			}
 		}
 	}
 
 	.description {
 		font-size: 22.4px;
-		color: #fff;
-		margin-bottom: 50px;
+		color: $text;
+		margin-bottom: 40px;
 
 		@media (max-width: 575px) {
 			& {
 				margin-bottom: 30px;
-				color: #000;
 			}
 		}
 	}
@@ -214,11 +214,11 @@
 		justify-content: space-around;
 		align-items: center;
 		font-size: 28px;
-		border: 1px solid #e9b370;
-		color: #fff;
+		border: 1px solid $title2;
+		color: $title2;
 		text-align: center;
 		width: 100%;
-		padding: 10px 95px;
+		padding: 10px 145px;
 		margin: 0 auto;
 		margin-top: 20px;
 		transition: all 0.4s ease-in-out;
@@ -226,18 +226,18 @@
 		@media (max-width: 575px) {
 			& {
 				padding: 10px 0;
-				color: #444;
 			}
 		}
 
 		&:hover {
-			background: #e9b370;
+			background: $title2;
+			color: $background;
 		}
 
 		@media (max-width: 760px) {
 			&:hover {
 				background: none;
-				color: #fff;
+				color: $title2;
 			}
 		}
 

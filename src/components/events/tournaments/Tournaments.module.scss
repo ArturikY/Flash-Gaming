@@ -1,3 +1,5 @@
+@import '../../../assets/styles/variables.scss';
+
 .tournament {
 	width: 100%;
 	margin-top: 160px;
@@ -15,7 +17,7 @@
 
 .title {
 	font-size: 60px;
-	color: #444444;
+	color: $title;
 	line-height: 1;
 	padding-bottom: 30px;
 
@@ -37,6 +39,7 @@
 	text-decoration: none;
 	width: 80%;
 	margin: 0 auto;
+	color: $text;
 
 	@media (max-width: 1000px) {
 		& {
@@ -46,11 +49,11 @@
 
 	b {
 		font-family: 'Roboto', sans-serif;
-		color: #e9b370;
+		color: $main;
 		font-size: 20px;
 	}
 }
 
 .events {
-	margin-bottom: 100px;
+	padding-bottom: 100px;
 }
