@@ -20,10 +20,12 @@
 [x] - Colors MAIN
 [x] - Colors CLUB
 [x] - Colors SHOP
-[] - Colors NEWS
-[] - Colors EVENTS
-[] - Desing HEADER
-[] - Animations for all
-
+[x] - Colors NEWS
+[x] - Colors EVENTS
+[x] - Colors BAG
 <-Bags->
-[] - Remove from Detail
+[x] - Remove from Detail
+[x] - Count in BAG
+[] - Clear BAG, when send form
+[] - Fixed HEADER
+[] - Check full adaptive

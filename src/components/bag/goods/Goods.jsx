@@ -6,7 +6,7 @@ import { deleteEl } from '../../../assets/scripts/script'
 import { useActions } from '../../../hooks/useActions.js'
 
 export const Goods = ({ product, listProducts, setListProducts }) => {
-	const [count, setCount] = useState(product.count)
+	const [count, setCount] = useState(product.quantity)
 
 	const { removeFromBag } = useActions()
 

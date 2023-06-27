@@ -8,15 +8,15 @@ import { BsSignpostFill } from 'react-icons/bs'
 export const Article = () => {
 	const [listNews, setListNews] = useState([])
 
-	useEffect(() => {
-		const getNews = async () => {
-			const data = await NewsService.getAll()
+	// useEffect(() => {
+	// 	const getNews = async () => {
+	// 		const data = await NewsService.getAll()
 
-			setListNews(data)
-		}
+	// 		setListNews(data)
+	// 	}
 
-		getNews()
-	}, [])
+	// 	getNews()
+	// }, [])
 
 	return (
 		<div className={styles.article}>
@@ -60,9 +60,9 @@ export const Article = () => {
 						duration: 0.5,
 					}}
 				>
-					{listNews.map((news, index) => (
-						<New key={index} news={news} />
-					))}
+					{!listNews
+						? null
+						: listNews.map((news, index) => <New key={index} news={news} />)}
 				</motion.div>
 			</div>
 		</div>

@@ -7,15 +7,15 @@ import { motion } from 'framer-motion'
 export const Tournament = () => {
 	const [listEvents, setListEvents] = useState([])
 
-	useEffect(() => {
-		const getEvents = async () => {
-			const data = await EventsService.getAll()
+	// useEffect(() => {
+	// 	const getEvents = async () => {
+	// 		const data = await EventsService.getAll()
 
-			setListEvents(data)
-		}
+	// 		setListEvents(data)
+	// 	}
 
-		getEvents()
-	}, [])
+	// 	getEvents()
+	// }, [])
 
 	return (
 		<div className={styles.tournament}>
@@ -35,13 +35,15 @@ export const Tournament = () => {
 						duration: 0.3,
 					}}
 				>
-					{listEvents.map((act, index) => (
-						<div key={index} className={styles.event}>
-							<h2 className={styles.title}>{act.title}</h2>
-							<img src={`${act.image}`} alt='Ooops' />
-							<p className={styles.description}>{act.description}</p>
-						</div>
-					))}
+					{!listEvents
+						? null
+						: listEvents.map((act, index) => (
+								<div key={index} className={styles.event}>
+									<h2 className={styles.title}>{act.title}</h2>
+									<img src={`${act.image}`} alt='Ooops' />
+									<p className={styles.description}>{act.description}</p>
+								</div>
+						  ))}
 				</motion.div>
 			</div>
 		</div>

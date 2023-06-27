@@ -8,15 +8,15 @@ import { VscRuby } from 'react-icons/vsc'
 export const Products = ({ setOpenDetail, setDetail }) => {
 	const [listProducts, setListProducts] = useState([])
 
-	useEffect(() => {
-		const getProducts = async () => {
-			const data = await ShopService.getAll()
+	// useEffect(() => {
+	// 	const getProducts = async () => {
+	// 		const data = await ShopService.getAll()
 
-			setListProducts(data)
-		}
+	// 		setListProducts(data)
+	// 	}
 
-		getProducts()
-	}, [])
+	// 	getProducts()
+	// }, [])
 
 	return (
 		<div className={styles.products}>
@@ -60,21 +60,25 @@ export const Products = ({ setOpenDetail, setDetail }) => {
 						duration: 0.5,
 					}}
 				>
-					{listProducts.map((data, index) => (
-						<div key={index}>
-							<h2 className={styles.category}>{data.category}</h2>
-							<div className={styles.section}>
-								{data.products.map((product, index) => (
-									<Product
-										product={product}
-										key={index}
-										setOpenDetail={setOpenDetail}
-										setDetail={setDetail}
-									/>
-								))}
-							</div>
-						</div>
-					))}
+					{!listProducts
+						? null
+						: listProducts.map((data, index) => (
+								<div key={index}>
+									<h2 className={styles.category}>{data.category}</h2>
+									<div className={styles.section}>
+										{!data.products
+											? null
+											: data.products.map((product, index) => (
+													<Product
+														product={product}
+														key={index}
+														setOpenDetail={setOpenDetail}
+														setDetail={setDetail}
+													/>
+											  ))}
+									</div>
+								</div>
+						  ))}
 				</motion.div>
 			</div>
 		</div>

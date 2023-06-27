@@ -11,7 +11,7 @@ export const Bag = () => {
 	const [listProducts, setListProducts] = useState([])
 
 	useEffect(() => {
-		setListProducts(makeNewList(bag))
+		setListProducts([...makeNewList(bag)])
 	}, [])
 
 	return (

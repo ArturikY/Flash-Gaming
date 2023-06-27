@@ -3,10 +3,12 @@ import { HOST } from '../assets/scripts/script.js'
 
 export const NewsService = {
 	async getAll() {
-		// Change URL and add HOST
-		const response = await axios.get('/api/news/')
-
-		return response.data
+		try {
+			const response = await axios.get('/api/news/')
+			return response.data
+		} catch (error) {
+			console.log(error)
+		}
 	},
 }
 
