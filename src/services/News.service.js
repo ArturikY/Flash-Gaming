@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { HOST } from '../assets/scripts/script.js'
 
 export const NewsService = {
 	async getAll() {

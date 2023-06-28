@@ -3,6 +3,7 @@ import styles from './Header.module.scss'
 import { useRef, useState } from 'react'
 
 export const Header = () => {
+	// For Burger
 	const [burger, setBurger] = useState(false)
 	const [menu, setMenu] = useState(false)
 	const burgerRef = useRef()
@@ -10,11 +11,18 @@ export const Header = () => {
 	const toggleBurger = () => {
 		setBurger(prev => !prev)
 		setMenu(prev => !prev)
-		console.log(burgerRef.current)
 	}
 
+	// For fixed Header
+	// const [header, setHeader] = useState(false)
+
+	// const toggleHeader = () => {
+	// 	setHeader(prev => !prev)
+	// 	console.log(toggleHeader.current)
+	// }
+
 	return (
-		<header className={styles.header}>
+		<header className='header'>
 			<div className='main__container'>
 				<div className={styles.content}>
 					<div href='#' className={styles.logo}>

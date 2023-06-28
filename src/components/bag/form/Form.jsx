@@ -14,19 +14,19 @@ export const Form = ({ listProducts, setListProducts }) => {
 
 	const { removeFromBag } = useActions()
 
-	// const sendForm = async e => {
-	// 	e.preventDefault()
-	// 	const data = await BagService.sendData(listProducts, formData)
+	const sendForm = async e => {
+		e.preventDefault()
+		const data = await BagService.sendData(listProducts, formData)
 
-	// 	console.log(1, listProducts)
-	// 	for (let el of listProducts) {
-	// 		console.log(1, el)
-	// 		deleteEl(listProducts, el)
-	// 		removeFromBag(el)
-	// 	}
-	// 	console.log(listProducts)
-	// 	setListProducts(listProducts)
-	// }
+		console.log(1, listProducts)
+		for (let el of listProducts) {
+			console.log(1, el)
+			deleteEl(listProducts, el)
+			removeFromBag(el)
+		}
+		console.log(listProducts)
+		setListProducts(listProducts)
+	}
 
 	return (
 		<motion.div

@@ -8,15 +8,15 @@ import { BsSignpostFill } from 'react-icons/bs'
 export const Article = () => {
 	const [listNews, setListNews] = useState([])
 
-	// useEffect(() => {
-	// 	const getNews = async () => {
-	// 		const data = await NewsService.getAll()
+	useEffect(() => {
+		const getNews = async () => {
+			const data = await NewsService.getAll()
 
-	// 		setListNews(data)
-	// 	}
+			setListNews(data)
+		}
 
-	// 	getNews()
-	// }, [])
+		getNews()
+	}, [])
 
 	return (
 		<div className={styles.article}>

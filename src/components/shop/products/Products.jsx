@@ -8,15 +8,15 @@ import { VscRuby } from 'react-icons/vsc'
 export const Products = ({ setOpenDetail, setDetail }) => {
 	const [listProducts, setListProducts] = useState([])
 
-	// useEffect(() => {
-	// 	const getProducts = async () => {
-	// 		const data = await ShopService.getAll()
+	useEffect(() => {
+		const getProducts = async () => {
+			const data = await ShopService.getAll()
 
-	// 		setListProducts(data)
-	// 	}
+			setListProducts(data)
+		}
 
-	// 	getProducts()
-	// }, [])
+		getProducts()
+	}, [])
 
 	return (
 		<div className={styles.products}>

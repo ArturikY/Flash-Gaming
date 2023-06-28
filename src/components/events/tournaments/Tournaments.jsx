@@ -7,15 +7,15 @@ import { motion } from 'framer-motion'
 export const Tournament = () => {
 	const [listEvents, setListEvents] = useState([])
 
-	// useEffect(() => {
-	// 	const getEvents = async () => {
-	// 		const data = await EventsService.getAll()
+	useEffect(() => {
+		const getEvents = async () => {
+			const data = await EventsService.getAll()
 
-	// 		setListEvents(data)
-	// 	}
+			setListEvents(data)
+		}
 
-	// 	getEvents()
-	// }, [])
+		getEvents()
+	}, [])
 
 	return (
 		<div className={styles.tournament}>

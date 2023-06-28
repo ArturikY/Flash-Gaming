@@ -26,6 +26,6 @@
 <-Bags->
 [x] - Remove from Detail
 [x] - Count in BAG
-[] - Clear BAG, when send form
 [] - Fixed HEADER
-[] - Check full adaptive
+[x] - Check full adaptive
+[] - Clear BAG, when send form

@@ -1,8 +1,4 @@
-import { gsap } from 'gsap'
-
-// Add HOST
-export const HOST = ''
-
+// Make new list
 export const makeNewList = arr => {
 	const newList = []
 
@@ -26,6 +22,9 @@ export const makeNewList = arr => {
 	return newList
 }
 
+// Delete element
 export const deleteEl = (list, elem) => {
 	list.splice(list.indexOf(elem), 1)
 }
+
+// console.log(window.pageYOffset)

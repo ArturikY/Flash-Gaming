@@ -23,16 +23,17 @@ const teamAnimation = {
 export const Team = () => {
 	const [listPlayers, setListPlayers] = useState([])
 
-	// useEffect(() => {
-	// 	const getPlayers = async () => {
-	// 		const data = await MainService.getPlayers()
+	useEffect(() => {
+		const getPlayers = async () => {
+			const data = await MainService.getPlayers()
 
-	// 		setListPlayers(data)
-	// 		console.log(listPlayers)
-	// 	}
+			setListPlayers(data)
+			console.log(listPlayers)
+		}
 
-	// 	getPlayers()
-	// }, [])
+		getPlayers()
+		console.log(listPlayers)
+	}, [])
 
 	return (
 		<motion.div className={styles.team} initial='hidden' whileInView='visible'>
@@ -43,7 +44,7 @@ export const Team = () => {
 					<hr className={styles.line} />
 				</div>
 				<div className={styles.players}>
-					{!listPlayers
+					{listPlayers.length === 0
 						? null
 						: listPlayers.map((player, index) => (
 								<div className={styles.player} key={index}>
